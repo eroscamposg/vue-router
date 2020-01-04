@@ -33,6 +33,22 @@ const routes = [
     name: "photos",
     component: () =>
       import(/* webpackChunkName: "photos" */ "../views/Photos.vue")
+  },
+  {
+    path: "/grid",
+    name: "grid",
+    component: () => import(/* webpackChunkName: "grid" */ "../views/Grid.vue")
+  },
+  {
+    path: "/cards",
+    name: "cards",
+    component: () =>
+      import(/* webpackChunkName: "cards" */ "../views/Cards.vue")
+  },
+  {
+    path: "/form",
+    name: "form",
+    component: () => import(/* webpackChunkName: "cards" */ "../views/Form.vue")
   }
 ];
 
